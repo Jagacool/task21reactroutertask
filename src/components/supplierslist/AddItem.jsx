@@ -15,4 +15,19 @@ function AddItem() {
     };
 
     axiosInstance.post('', supplier)
-      .
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        window.location = "/Suppliers";
+      })
+      .catch(error => console.error(error));
+  };
+
+  return (
+    <div id='addContainer'>
+      {/* ... (Rest of the AddItem component content) */}
+    </div>
+  );
+}
+
+export default AddItem;
