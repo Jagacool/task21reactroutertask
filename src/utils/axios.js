@@ -1,7 +1,9 @@
-const axios = require('axios').default;
+import axios from 'axios';
 
-export const axiosInstance = axios.create({
-    baseURL: 'https://northwind.vercel.app/api/suppliers/',
-    timeout: 2000,
-    headers: {'X-Custom-Header': 'suppliers'}
+const axiosInstance = axios.create({
+  baseURL: 'https://northwind.vercel.app/api/suppliers',
+  timeout: 2000,
+  headers: { 'X-Custom-Header': 'suppliers' }
 });
+
+export default axiosInstance;
