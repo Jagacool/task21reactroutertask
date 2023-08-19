@@ -1,6 +1,6 @@
 import './addItem.css';
-import { useState } from "react";
-const axios = require('axios').default;
+import React, { useState } from 'react';
+import { axiosInstance } from '../../utils/axios';lt;
 
 const Add = () => {
 
